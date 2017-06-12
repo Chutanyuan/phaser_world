@@ -47,6 +47,9 @@ game.States.start = function () {
         },10);
         //屏幕跟随卡片的移动
         game.camera.follow(card);
+        var bar = game.add.graphics();
+        bar.beginFill(0x000000,0.5);
+        bar.drawRect(0,100,800,100);
     };
     this.ObjectWithTouch = function () {
         move = (move === 0) ? move = 1 : move = 0;
